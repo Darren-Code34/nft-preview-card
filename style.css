@@ -1,0 +1,97 @@
+/* design mobil*/
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.nft-card{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 30px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 12px;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.nft-img{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.title{
+    color: hsl(0, 0%, 100%);
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.description{
+    width: 100%;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+.price-timer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.price{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.eth-symbol{
+    vertical-align: middle;
+}
+
+.timer{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.timer-icon{
+    vertical-align: middle;
+}
+
+.line{
+    border: solid 1px hsl(215, 32%, 27%);
+    margin-bottom: 25px;
+}
+
+.info-creator{
+    vertical-align: center;
+}
+
+.creation{
+    color: hsl(215, 51%, 70%);
+    font-size: 15px;
+}
+
+.avatar-creator{
+    width: 50px;
+    margin-right: 15px;
+    vertical-align: middle;
+    border: 1.5px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    
+}
+
+.creator-name{
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution{
+    margin-top: 50px;
+    color: hsl(0, 0%, 100%);
+}

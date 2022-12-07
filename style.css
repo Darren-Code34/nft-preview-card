@@ -5,6 +5,8 @@ body{
     font-family: 'Outfit', sans-serif;
 }
 
+
+
 .nft-card{
     display: block;
     margin-left: auto;
@@ -12,8 +14,23 @@ body{
     padding: 25px 30px;
     background-color: hsl(216, 50%, 16%);
     border-radius: 12px;
-    width: 70%;
+    width: 270px;
     margin-top: 50px;
+}
+
+.nft{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+
+.icon-view{
+    position: absolute;
+    z-index: 2;
+    background-color: hsl(178, 100%, 50%);
+    padding: 111px 111px;
+    border-radius: 10px;
+    opacity: 0;
 }
 
 .nft-img{
@@ -22,7 +39,9 @@ body{
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
-    margin-bottom: 30px;
+    z-index: 3;
+    opacity: 1;
+    cursor: pointer;
 }
 
 .title{
@@ -30,6 +49,7 @@ body{
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 25px;
+    cursor: pointer;
 }
 
 .description{
@@ -89,9 +109,50 @@ body{
 
 .creator-name{
     color: hsl(0, 0%, 100%);
+    cursor: pointer;
 }
 
 .attribution{
     margin-top: 50px;
     color: hsl(0, 0%, 100%);
+}
+
+/* responsive design*/
+
+@media only screen and (min-width: 600px){
+
+    .nft-card{
+        width: 270px;
+    }
+}
+
+@media only screen and (min-width: 700px){
+
+    .nft-card{
+        width: 300px;
+        margin-top: 70px;
+    }
+
+    .icon-view{
+        padding: 126px 126px;
+        
+    }
+}
+
+/*Active-states*/
+
+.title:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.creator-name:hover{
+    color: hsl(178, 100%, 50%);;
+}
+
+.nft-img:hover{
+    opacity: 0.2;
+}
+
+.icon-view:hover{
+    opacity: 0.6;
 }
